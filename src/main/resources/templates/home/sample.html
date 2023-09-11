@@ -1,0 +1,30 @@
+<div layout:decorate="layouts/default" layout:fragment="contents">
+    <h2>最新ニュース</h2>
+    <div>
+        <h3>ニュースタイトル1</h3>
+        <p>
+            <span>2023/07/01 13:15</span>
+        </p>
+        <p>
+            <img th:src="@{images/tokyo_station.jpg}" class="article_image">
+        </p>
+        <p>
+            ニュースの記事です。
+        </p>
+    </div>
+
+    <div>
+        <h3>New List</h3>
+        <ul class="list-group">
+            <li class="list-group-item">
+                <a th:href="@{/article/1}">News1</a>
+            </li>
+            <li class="list-group-item">
+                <a th:href="@{/article/2}">News2</a>
+            </li>
+            <li class="list-group-item">
+                <a th:href="@{/article/3}">News3</a>
+            </li>
+        </ul>
+    </div>
+</div>
